@@ -18,8 +18,8 @@ def start_client():                                             #---------------
         client_socket.connect((host, port))                                   #    /
         logging.info(f"Connected to server at {host}:{port}")   #-----------------/
 
-        angle = float(input("Enter the throwing angle (in degrees): "))  #------------------/---------------------------------->  Player enters their throwing power and throwing angle
-        power = float(input("Enter the throwing power (as a percentage): ")) / 100  #------/                                      Throwing power is converted into a fraction
+        angle = float(input("Who can throw a paper airplane farther?\nEnter the throwing angle (in degrees): "))  #----/------->  Player enters their throwing power and throwing angle
+        power = float(input("Enter the throwing power (as a percentage): ")) / 100  #---------------------------------/           Throwing power is converted into a fraction
 
         
         angle = math.floor(angle)  #------------------------------------------------------------------------------------------->  Floors the angle
